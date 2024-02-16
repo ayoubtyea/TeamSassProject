@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryBlue: "#5A4FF3",
+              goldenColor: "#232340",
+              secondary: "#333461",
+              gray: "#232340",
+              dark: "#00008B",
+              blue: '#5468E7',
+              darkBlue: "#11235A",
+            },
+            fontFamily: {
+              mont: ["Lexend Deca", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-mont text-white">
+    <section class="bg-[url('images/hero.png')] bg-cover bg-no-repeat overflow-hidden">
+      <header class="">
+        <nav class="flex items-center justify-around px-5 py-4">
+          <a href="#" class="text-4xl">Team <span class="text-primaryBlue">.</span></a>
+          <div class="hidden md:flex items-center gap-[30px]">
+            <ul class="flex gap-[30px]">
+              <li>
+                <a href="#" class="underline underline-offset-1">Product</a>
+              </li>
+              <li><a href="#" class="underline underline-offset-1">Blog</a></li>
+              <li>
+                <a href="#" class="underline underline-offset-1">Support</a>
+              </li>
+              <li>
+                <a href="#" class="underline underline-offset-1">Log In </a>
+              </li>
+            </ul>
+            <button
+              class="bg-primaryBlue py-[11px] px-5 text-white rounded font-semibold">Get Access
+            </button>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <img src="images/Burger_Icon.png" alt="dropdpwn" class="hidden" />
+      </header>
+
+      <section class="grid grid-cols-2 ml-[16rem] md:ml-[14rem]">
+        <section class="pt-32 pb-24 flex justify-center">
+          <div class="px-10">
+            <h1 class="font-bold text-xl md:text-5xl text-white w-[35rem]">
+              Instant collaboration for remote teams
+            </h1>
+            <p class="text-xl mt-6 text-white w-[25rem]">
+              All-in-one place for your remote team to chat, collaborate and
+              track project progress.
+            </p>
+            <form class="relative mt-[28px] p-2 block md:flex w-full md:w-full gap-5 justify-center items-center" >
+              <input type="text"placeholder="Email"class="p-3 border border-[#D0D5DD] rounded-lg w-[300px]" />
+              <button class="bg-primaryBlue flex w-[300px] px-20 py-3  text-white rounded font-semibold justify-center items-center mt-2 md:mt-0" >
+                Get Free Guide
+              </button>
+            </form>
+          </div>
+          
+        </section>
+      </section>
+    </section>
+    <!-- Section 1 -->
+    <section class="flex flex-col-reverse md:flex-row md:mr-[10rem] md:mt-[1rem] mt-[5rem]">
+      <section class="container md:max-auto pt-32 pb-24 flex justify-center">
+        <div class="px-10">
+          <h1 class="font-bold text-5xl text-goldenColor md:w-[35rem] leading-[3.4rem]">
+            Chats for your distributed teams
+          </h1>
+          <p class="text-xl mt-6 text-gray md:w-[30rem]">
+            Team combines the immediacy of real-time chat with an email
+            threading model. With Team, you can catch up on important
+            conversations while ignoring irrelevant ones.
+          </p>
+          <div class="flex mt-[18px] items-center">
+            <a href="#" class="px-1 text-primaryBlue font-semibold justify-center items-center underline underline-offset-1 gap-2">
+              Learn More
+            </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="w-4 justify-center items-center text-primaryBlue fill-primaryBlue-500"
+            >
+              <path
+                d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z" />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex items-center justify-center -ml-[5rem] md:mr-0 md:w-[550px]"
+      >
+        <div class="container relative sm:flex-reverse">
+          <img  src="images/mockup.png" alt="img" />
+        </div>
+      </section>
+    </section>
+    <!-- Section 2 -->
+    <section class="bg-white">
+      <div class="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto md:grid md:grid-cols-2 lg:py-16 lg:px-6">
+         <div class="grid grid-cols-1 mt-8 md:ml-[7rem]">
+              <img class="w-[500px] md:w-100%" src="images/img-1.png" alt="#">
+          </div>
+        <div class="sm:text-lg  mt-[3rem]">
+              <h2 class="mb-4 text-6xl font-extrabold tracking-tight text-goldenColor leading-[4rem]">Chats for your distributed teams</h2>
+              <p class="mb-4 text-gray">Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.</p>
+          <div class="flex mt-[18px] items-center">
+              <a
+                href="#"
+                class="px-1 text-primaryBlue font-semibold justify-center items-center underline underline-offset-1 gap-2"
+              >
+                Learn More
+              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="w-4 justify-center items-center text-primaryBlue fill-primaryBlue-500"
+              >
+                <path
+                  d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"
+                />
+              </svg>
+            </div>
+          </div>
+      </div>
+  </section>
+    <!-- Section3 -->
+    <section class="bg-white dark:bg-gray-900">
+      <div class="items-center flex flex-col-reverse  max-w-screen-xl gap-16 px-4 py-8 mx-auto md:grid md:grid-cols-2 lg:py-16 lg:px-6">
+         
+        <div class="sm:text-lg mt-[3rem] md:ml-[8rem]">
+              <h2 class="mb-4 text-6xl font-extrabold tracking-tight text-goldenColor  leading-[4rem]">Choose how you want to work</h2>
+              <p class="mb-4 text-gray">Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.</p>
+          <div class="flex mt-[18px] items-center">
+              <a
+                href="#"
+                class="px-1 text-primaryBlue font-semibold justify-center items-center underline underline-offset-1 gap-2"
+              >
+                Learn More
+              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="w-4 justify-center items-center text-primaryBlue fill-primaryBlue-500"
+              >
+                <path
+                  d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"
+                />
+              </svg>
+            </div>
+          </div>
+        <div class="grid grid-cols-1 mt-8">
+              <img class="w-[500px] md:w-100%" src="images/img-2.png" alt="#">
+             
+          </div>
+      </div>
+  </section>
+    <!-- Section4   -->
+
+    <!-- Section 5 -->
+    <section class="bg-white">
+      <div class="items-center  max-w-screen-xl gap-16 px-4 py-8 mx-auto md:grid md:grid-cols-2 lg:py-16 lg:px-6">
+         <div class="grid grid-cols-1 mt-8 md:ml-[7rem]">
+              <img class="w-[500px] md:w-100%" src="images/img-3.png" alt="#">
+             
+          </div>
+        <div class="sm:text-lg  mt-[3rem]">
+              <h2 class="mb-4 text-6xl font-extrabold tracking-tight text-goldenColor leading-[4rem]">Chats for your distributed teams</h2>
+              <p class="mb-4 text-gray">Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.</p>
+          <div class="flex mt-[18px] items-center">
+              <a
+                href="#"
+                class="px-1 text-primaryBlue font-semibold justify-center items-center underline underline-offset-1 gap-2"
+              >
+                Learn More
+              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="w-4 justify-center items-center text-primaryBlue fill-primaryBlue-500"
+              >
+                <path
+                  d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"
+                />
+              </svg>
+            </div>
+          </div>
+      </div>
+  </section>
+    <!-- Footer -->
+
+    <footer class="bg-darkBlue text-white pt-12 pb-8 px-4 mt-[2rem]">
+      <div class="mx-auto px-4 container overflow-hidden flex flex-col lg:flex-row justify-between">
+          <a href="/" class="block mr-4 w-1/3">
+              <img src="images/team..png" class="w-30 ml-4 lg:ml-0" alt="logo">
+              <p class="w-1/2 mt-5 ml-4 lg:ml-0">Collaboration platform for mordern team </p>
+            </a>
+         
+          <div class="w-4/3 block sm:flex text-sm mt-6 lg:mt-0">
+              <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
+                  <li class="inline-block py-2 px-3 text-blue uppercase font-medium tracking-wide">Company</li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">Product</a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">Blog</a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">Support</a></li>
+              </ul>
+              <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
+                  <li class="inline-block py-2 px-3 text-blue uppercase font-medium tracking-wide">Features</li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">Screen Sharing</a>
+                  </li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">iOS & Android Apps</a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">File Sharing</a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">User Managment</a></li>
+              </ul>
+              <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
+                  <li class="inline-block py-2 px-3 text-blue uppercase font-medium tracking-wide">Contact Us</li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">info@teamapp.com</a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">1-800-200-300</a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">1010 Sunset Blv.
+                    Palo Alto, California</a></li>
+                  </li>
+              </ul>
+              <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
+                <li class="inline-block py-2 px-3 text-blue uppercase font-medium tracking-wide">Stay up to date </li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-white no-underline">Subscribe to our newseller</a></li>
+
+<form class="max-w-sm mx-auto">
+  <div class="relative">
+    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none ">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+       
+        <path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+    </div>
+    <input type="text" id="email-address-icon" class="border border-gray-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5  dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mr-[20px] lg:ml-0" placeholder="Email">
+  </div>
+</form>
+</ul>
+    </div>
+      </div>
+      <div class="pt-4 mt-4 pt-6 text-gray-600"> © Copyright Team Inc.</div>
+  </footer>
+  </body>
+</html>
